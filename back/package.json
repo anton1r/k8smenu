@@ -1,0 +1,30 @@
+{
+  "name": "menu-back",
+  "version": "1.1.0",
+  "description": "backend for menu",
+  "main": "index.js",
+  "scripts": {
+    "db:local": "docker run --name postgres -p 5432:5432 -e POSTGRES_USER=menuser -e POSTGRES_PASSWORD=yourStrong@Password -e POSTGRES_DB=menu -d postgres:alpine",
+    "start": "DB_USERNAME=menuser DB_PASSWORD=yourStrong@Password DB_HOSTNAME=localhost node ./server.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "anton1r",
+  "license": "UNLICENCED",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^23.4.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "pm2": "^4.2.3"
+  },
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "4.2.1",
+    "koa-passport": "4.1.3",
+    "koa-router": "^8.0.6",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.4"
+  }
+}

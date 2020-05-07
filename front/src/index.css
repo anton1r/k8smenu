@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+table {
+  border: darkcyan;
+  border-style: solid;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: auto;
+}
+
+table caption {
+	background-color: darkcyan;
+	color: #fff;
+	font-size: x-large;
+	font-weight: bold;
+	letter-spacing: .3em;
+}
+
+table thead th {
+	padding: 8px;
+	background-color: #fde9d9;
+	font-size: large;
+}
+
+table thead th#thDay {
+	width: 40%;	
+}
+
+table thead th#thRegular, table thead th#thOvertime, table thead th#thTotal {
+	width: 20%;
+}
+
+table th, table td {
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f79646 #ccc;
+}
+
+table td {
+	text-align: right;
+}
+
+table tbody th {
+	text-align: left;
+	font-weight: normal;
+}
+
+table tfoot {
+	font-weight: bold;
+	font-size: large;
+	background-color: #687886;
+	color: #fff;
+}
+
+table tr.even {
+	background-color: #fde9d9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.pagination {
+  width: fit-content;
+  margin: auto;
+}
