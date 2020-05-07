@@ -6,7 +6,7 @@ const envVarHos = process.env.DB_HOSTNAME;
 async function healthcheck(ctx) {
   ctx.response.status = 200;
   return new Sequelize(
-    `postgres://${envVarUse}:${envVarPas}@${envVarHos}:5432/menu`
+    `postgres://${envVarUse}:${envVarPas}@${envVarHos}:5432/menudb`
   )
     .authenticate()
     .then(() => {

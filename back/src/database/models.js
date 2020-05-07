@@ -4,7 +4,7 @@ const envVarUse = process.env.DB_USERNAME;
 const envVarPas = process.env.DB_PASSWORD;
 const envVarHos = process.env.DB_HOSTNAME;
 const sequelize = new Sequelize(
-  `postgres://${envVarUse}:${envVarPas}@${envVarHos}:5432/menu`,
+  `postgres://${envVarUse}:${envVarPas}@${envVarHos}:5432/menudb`,
   {
     retry: {
       match: [

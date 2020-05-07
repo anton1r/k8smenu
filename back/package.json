@@ -4,8 +4,9 @@
   "description": "backend for menu",
   "main": "index.js",
   "scripts": {
-    "db:local": "docker run --name postgres -p 5432:5432 -e POSTGRES_USER=menuser -e POSTGRES_PASSWORD=yourStrong@Password -e POSTGRES_DB=menu -d postgres:alpine",
-    "start": "DB_USERNAME=menuser DB_PASSWORD=yourStrong@Password DB_HOSTNAME=localhost node ./server.js"
+    "start:dev" :"DB_USERNAME=menuser DB_PASSWORD=yourStrong@Password DB_HOSTNAME=localhost pm2-dev start src/server.js",
+    "db:local": "docker run --name postgres -p 5432:5432 -e POSTGRES_USER=menuser -e POSTGRES_PASSWORD=yourStrong@Password -e POSTGRES_DB=menudb -d postgres:alpine",
+    "start": "DB_USERNAME=menuser DB_PASSWORD=yourStrong@Password DB_HOSTNAME=localhost node ./src/server.js"
   },
   "repository": {
     "type": "git"
