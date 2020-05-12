@@ -41,7 +41,7 @@ Menu.init(
   },
   {
     sequelize,
-    modelName: "Menu",
+    modelName: "menu",
     timestamps: false
   }
 );

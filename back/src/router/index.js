@@ -10,4 +10,10 @@ router.get(
   getDay
 );
 
+const getWeek = require("../week")
+router.get(
+  "/week/:id",
+  getWeek
+);
+
 module.exports = router;
