@@ -1,0 +1,1 @@
+gcloud container --project "raffertymenu" clusters delete "menucluster" 

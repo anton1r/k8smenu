@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: databaseseed
+spec:
+  template:
+    spec:
+      containers:
+      - name: backend
+        image: eu.gcr.io/raffertymenu/backend
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        env:
+          - name: DB_USERNAME
+            value: menuser
+          - name: DB_PASSWORD
+            value: yourStrong@Password 
+          - name: DB_HOSTNAME
+            value: menupostgres-postgresql
+        command: ["node", "./database/sync.js"]
+      restartPolicy: Never

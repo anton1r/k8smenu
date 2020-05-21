@@ -2,7 +2,7 @@ const { Menu } = require("../database/models");
 
 const getDay = async id => {
   return Menu.findOne({
-    attributes: ["Data"],
+    attributes: ["Key", "Data"],
     where: {
       Key: id
     }});
