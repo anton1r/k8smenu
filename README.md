@@ -36,12 +36,13 @@ docker run -p 80:80 eu.gcr.io/raffertymenu/frontend:latest
 
 ## v2
 1. Install Pulumi
-2. Set some credentials for the config files
+2. Update the projectname in Pulumi.menu.yaml to match your own project
+3. Set some credentials for the config files
 ```
 pulumi config set --path menugcp:clusterPassword <SOMETHING>
 pulumi config set --path menugcp:dbPassword <SOMETHING ELSE>
 ```
-3. Bring up the database, cluster, deployment and service with `pulumi up --yes`
+4. Bring up the database, cluster, deployment and service with `pulumi up --yes`
 * TODO seed the database, Deploy the front end, Make the databas not public.
 
 ## WARNING EVERYTHING in GCP here is publicly accessible, so just make sure you turn it all off after your finished.
