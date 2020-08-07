@@ -16,7 +16,7 @@ module.exports = async ctx => {
   
   return getWeek(days)
     .then(dbResponse => {
-    const rsp = dbResponse.flat();
+    const rsp = JSON.parse(dbResponse.flat());
     ctx.body = rsp;
     ctx.response.status = 200;
     return;

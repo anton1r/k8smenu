@@ -1,0 +1,6 @@
+config:
+  gcp:project: raffertymenu
+  gcp:zone: europe-west2
+  menugcp:clusterPassword: <SET A VALUE HERE>
+  menugcp:dbPassword: <SOME VALUE>
+  menugcp:dbUsername: menuser

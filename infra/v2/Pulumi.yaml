@@ -1,0 +1,16 @@
+name: menugcp
+runtime: nodejs
+description: A minimal Google Cloud JavaScript Pulumi program
+# template:
+#   config:
+#     gcp:project:
+#       description: The Google Cloud project to deploy into
+#     gcp:zone:
+#       description: The Google Cloud zone
+#       default: europe-west2
+#     clusterPassword:
+#       description: Your new cluster password
+#       secret: true
+#     dbPassword:
+#       description: Your new DB password
+#       secret: true
